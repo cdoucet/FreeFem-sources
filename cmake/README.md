@@ -54,3 +54,7 @@ Note that it may be used with the parallel version of ```make```:
 make -j 4 VERBOSE=1
 ```
 
+## Community
+
+CMake benefits from the experience of a large community.
+Help can be found from the official mailing list and stackoverflow.
