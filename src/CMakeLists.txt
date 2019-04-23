@@ -19,7 +19,7 @@
 # FFGLUT
 ########
 
-IF(GLUT_FOUND)
+IF(FF_GLUT_FOUND)
 
   ADD_EXECUTABLE(ffglut ${CMAKE_SOURCE_DIR}/src/Graphics/ffglut.cpp
                         ${CMAKE_SOURCE_DIR}/src/femlib/fem.cpp
@@ -40,16 +40,16 @@ IF(GLUT_FOUND)
                       ${CMAKE_SOURCE_DIR}/src/fflib/ 
                       ${CMAKE_SOURCE_DIR}/src/Graphics/)
   
-  TARGET_LINK_LIBRARIES(ffglut lglib libff
-                               ${CMAKE_THREAD_LIBS_INIT} 
-                               ${OPENGL_gl_LIBRARY} 
-                               ${OPENGL_glu_LIBRARY} 
-                               ${GLUT_LIBRARIES})
+  TARGET_LINK_LIBRARIES(ffglut lglib 
+                               libff 
+                               Threads::Threads 
+                               OpenGL::GLU 
+                               GLUT::GLUT)
   
   INSTALL(TARGETS ffglut
           RUNTIME DESTINATION bin)
 
-ENDIF(GLUT_FOUND)
+ENDIF()
 
 ###############
 # FREEFEM++-MPI

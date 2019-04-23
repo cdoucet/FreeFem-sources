@@ -10,8 +10,8 @@
                              COLAMD
                              DLOPEN
                              FLEX
-                             #OpenGL
-                             #GLUT
+                             OpenGL
+                             GLUT
                              GSL
                              HDF5
                              SUITESPARSE
