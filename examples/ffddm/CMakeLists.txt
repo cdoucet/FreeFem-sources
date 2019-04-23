@@ -15,7 +15,11 @@ IF(NOT FF_PLUGIN_MEDIT)
                              ${CMAKE_CURRENT_SOURCE_DIR}/natural_convection_3D_obstacle.edp
                              ${CMAKE_CURRENT_SOURCE_DIR}/diffusion-3d-minimal-direct.edp
                              ${CMAKE_CURRENT_SOURCE_DIR}/Helmholtz-2d-marmousi.edp
-                             ${CMAKE_CURRENT_SOURCE_DIR}/elasticity-3d-simple.edp)
+                             ${CMAKE_CURRENT_SOURCE_DIR}/elasticity-3d-simple.edp
+                             ${CMAKE_CURRENT_SOURCE_DIR}/all.edp
+                             ${CMAKE_CURRENT_SOURCE_DIR}/makeref.edp
+                             ${CMAKE_CURRENT_SOURCE_DIR}/ref.edp
+                             ${CMAKE_CURRENT_SOURCE_DIR}/regtests.edp)
 ENDIF(NOT FF_PLUGIN_MEDIT)
 
 IF(NOT FF_PLUGIN_ELEMENT_MIXTE3D)

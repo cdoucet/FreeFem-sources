@@ -27,6 +27,10 @@ IF(NOT FREEFEM_MSH3_INSTALLED)
                              ${CMAKE_SOURCE_DIR}/examples/3d/sphere6.edp
                              ${CMAKE_SOURCE_DIR}/examples/3d/tetgencube.edp
                              ${CMAKE_SOURCE_DIR}/examples/3d/tetgenholeregion.edp
+                             ${CMAKE_SOURCE_DIR}/examples/3d/all.edp
+                             ${CMAKE_SOURCE_DIR}/examples/3d/makeref.edp
+                             ${CMAKE_SOURCE_DIR}/examples/3d/ref.edp
+                             ${CMAKE_SOURCE_DIR}/examples/3d/regtests.edp
                              )
 ENDIF(NOT FREEFEM_MSH3_INSTALLED)
 

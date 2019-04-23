@@ -47,6 +47,11 @@ IF(MPI_FOUND)
 
 FILE(GLOB EDP_FILES *.edp)
 
+LIST(REMOVE_ITEM EDP_FILES ${CMAKE_CURRENT_SOURCE_DIR}/all.edp
+                           ${CMAKE_CURRENT_SOURCE_DIR}/makeref.edp
+                           ${CMAKE_CURRENT_SOURCE_DIR}/ref.edp
+                           ${CMAKE_CURRENT_SOURCE_DIR}/regtests.edp)
+
 # tests which are known to fail are removed from test list  
 LIST(REMOVE_ITEM EDP_FILES ${CMAKE_CURRENT_SOURCE_DIR}/chaleur3D-hips.edp
                            ${CMAKE_CURRENT_SOURCE_DIR}/chaleur3D-mumps.edp

@@ -1,5 +1,10 @@
 FILE(GLOB EDP_FILES *.edp)
 
+LIST(REMOVE_ITEM EDP_FILES ${CMAKE_CURRENT_SOURCE_DIR}/all.edp
+                           ${CMAKE_CURRENT_SOURCE_DIR}/makeref.edp
+                           ${CMAKE_CURRENT_SOURCE_DIR}/ref.edp
+                           ${CMAKE_CURRENT_SOURCE_DIR}/regtests.edp)
+
 LIST(SORT EDP_FILES)
 
 FOREACH(EDP_FILE ${EDP_FILES})
