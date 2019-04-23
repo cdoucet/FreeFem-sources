@@ -10,6 +10,8 @@ macro(ff_configure_thirdparty_optional)
                              MPI
                              MUMPS
                              NLOPT
+                             OpenGL
+                             GLUT
                              SCOTCH
                              SUPERLU
                              TETGEN
